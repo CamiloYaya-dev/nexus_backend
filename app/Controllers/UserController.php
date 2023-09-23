@@ -32,7 +32,7 @@ class UserController extends BaseController
     
             return $this->respond($response, Response::HTTP_OK)->setContentType('application/json');
         } catch (\CodeIgniter\Exceptions\PageNotFoundException $e) {
-            // Maneja la excepción de "Usuario no encontrado" aquí
+            // Maneja la excepción de "No se encontraron usuarios" aquí
             $response = [
                 'status'  => 'error',
                 'message' => $e->getMessage(),
@@ -55,7 +55,7 @@ class UserController extends BaseController
     
             return $this->respond($response, Response::HTTP_OK)->setContentType('application/json');
         } catch (\CodeIgniter\Exceptions\PageNotFoundException $e) {
-            // Maneja la excepción de "No se encontraron usuarios" aquí
+            // Maneja la excepción de "Usuario no encontrado para el ID:" aquí
             $response = [
                 'status'  => 'error',
                 'message' => $e->getMessage(),
@@ -86,6 +86,7 @@ class UserController extends BaseController
 
             return $this->respond($response, Response::HTTP_CREATED)->setContentType('application/json');
         } catch (\Exception $e) {
+            // Maneja la excepción de "Error al insertar el usuario en la base de datos." aquí
             $response = [
                 'status'  => 'error',
                 'message' => 'Error al crear el usuario',
@@ -117,7 +118,7 @@ class UserController extends BaseController
     
             return $this->respond($response, Response::HTTP_OK)->setContentType('application/json');
         } catch (\CodeIgniter\Exceptions\PageNotFoundException $e) {
-            // Maneja la excepción de "Error al eliminar el usuario en la base de datos" aquí
+            // Maneja la excepción de "Error al actualizar el usuario en la base de datos" aquí
             $response = [
                 'status'  => 'error',
                 'message' => $e->getMessage(),
