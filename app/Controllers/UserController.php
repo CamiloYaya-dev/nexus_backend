@@ -26,6 +26,7 @@ class UserController extends BaseController
     
             $response = [
                 'status' => 'success',
+                'message' => 'Usuarios obtenidos',
                 'data'   => $users,
             ];
     
@@ -48,6 +49,7 @@ class UserController extends BaseController
     
             $response = [
                 'status' => 'success',
+                'message' => 'Usuarios obtenido',
                 'data'   => $user,
             ];
     
