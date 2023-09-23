@@ -43,6 +43,8 @@
 
     <p>DESCRIPCION: Sirva para listar todos los usuarios del aplicativo</p>
 
+    <p>HEADERS: X-API-Key</p>
+
     <p>JSON REQUEST: 
         <code>
             {}
@@ -53,6 +55,7 @@
         <code>
             {
                 "status": "success",
+                "message": "Usuarios obtenidos",
                 "data": [
                     {
                         "id": "2",
@@ -75,6 +78,8 @@
 
     <p>DESCRIPCION: Sirva para listar un usuario especifico del aplicativo mediante el ID mediante el metodo GET</p>
 
+    <p>HEADERS: X-API-Key</p>
+
     <p>JSON REQUEST: 
         <code>
         {}
@@ -85,6 +90,7 @@
         <code>
         {
             "status": "success",
+            "message": "Usuarios obtenido",
             "data": [
                 {
                     "id": "1",
@@ -102,6 +108,8 @@
     <p>URL: http://localhost/nombre-del-proyecto/public/user</p>
 
     <p>DESCRIPCION: Sirva para crear un usuario</p>
+
+    <p>HEADERS: X-API-Key</p>
 
     <p>JSON REQUEST: 
         <code>
@@ -128,6 +136,8 @@
 
     <p>DESCRIPCION: Sirva para actualizar un usuario mediante el ID mediante el metodo PUT</p>
 
+    <p>HEADERS: X-API-Key</p>
+
     <p>JSON REQUEST: 
         <code>
         {
@@ -152,6 +162,8 @@
     <p>URL: http://localhost/nombre-del-proyecto/public/user/5</p>
 
     <p>DESCRIPCION: Sirva para eliminar un usuario mediante el ID mediante el metodo DELETE</p>
+
+    <p>HEADERS: X-API-Key</p>
 
     <p>JSON REQUEST: 
         <code>
