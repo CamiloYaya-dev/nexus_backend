@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "0775ac47-399b-4212-adbe-a473032c0a10",
+		"name": "NEXUS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22454507"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "obtenerUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "tuB20yGzdLhPQkcI9WxNvcAfJqOD5w3m",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/nexus_backend/public/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"nexus_backend",
+								"public",
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerUsuarioPorID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "tuB20yGzdLhPQkcI9WxNvcAfJqOD5w3m",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/nexus_backend/public/api/user/62",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"nexus_backend",
+								"public",
+								"api",
+								"user",
+								"62"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "crearUsuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "tuB20yGzdLhPQkcI9WxNvcAfJqOD5w3m",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Camilo Yaya\",\r\n    \"email\": \"camilo.yaya@gmail.com\",\r\n    \"age\": \"28\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/nexus_backend/public/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"nexus_backend",
+								"public",
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "actualizarUsuarioPorID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "tuB20yGzdLhPQkcI9WxNvcAfJqOD5w3m",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"camilo yaya\",\r\n    \"email\": \"camilo.yaya@gmail.com\",\r\n    \"age\": \"25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/nexus_backend/public/api/user/62",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"nexus_backend",
+								"public",
+								"api",
+								"user",
+								"62"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "eliminarUsuarioPorID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "tuB20yGzdLhPQkcI9WxNvcAfJqOD5w3m",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/nexus_backend/public/api/user/61",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"nexus_backend",
+								"public",
+								"api",
+								"user",
+								"61"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
